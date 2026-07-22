@@ -195,7 +195,7 @@ button {
   inset: 0;
   background-image: url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80");
   background-size: cover;
-  background-position: center 30%;
+  /* background-position: center 0%; */
 }
 .hero-overlay {
   position: absolute;
@@ -1221,10 +1221,17 @@ footer {
   align-items: center;
   flex-direction: row;
 }
-.ft-media ul li{
-  border: 1px solid var(--yellow2) ;
+.ft-media ul li {
+  border: 1px solid var(--yellow2);
   border-radius: 49%;
   padding: 10px;
+}
+.map{
+  height: 250px;
+  width: 400px;
+  border: 2px solid var(--yellow);
+  margin-left: 60px;
+  background-color: white;
 }
 
 .ft-photo img {
