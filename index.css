@@ -1226,7 +1226,7 @@ footer {
   border-radius: 49%;
   padding: 10px;
 }
-.map{
+.map {
   height: 250px;
   width: 400px;
   border: 2px solid var(--yellow);
@@ -1372,9 +1372,14 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 32px;
   }
-  .map-container{
-    display: none;
+  .map{
+    /* display: none; */
+    height: 200px;
+    width: 100%;
+    border: 2px solid var(--yellow);
   }
+
+  .
 }
 @media (max-width: 768px) {
   .nav-links,
