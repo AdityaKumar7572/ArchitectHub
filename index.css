@@ -195,7 +195,7 @@ button {
   inset: 0;
   background-image: url("https://images.unsplash.com/photo-1504307651254-35680f356dfd?w=1600&q=80");
   background-size: cover;
-  /* background-position: center 0%; */
+  background-position: center 0%;
 }
 .hero-overlay {
   position: absolute;
@@ -944,7 +944,7 @@ button {
   font-size: 1.8rem;
   font-weight: 700;
   color: #fff;
-  margin-bottom: 44px;
+  /* margin-bottom: 44px; */
 }
 .quote-mark {
   font-size: 5rem;
@@ -1230,8 +1230,7 @@ footer {
   height: 250px;
   width: 400px;
   border: 2px solid var(--yellow);
-  margin-left: 60px;
-  background-color: white;
+  overflow: hidden;
 }
 
 .ft-photo img {
@@ -1372,6 +1371,9 @@ footer {
   .ft-grid {
     grid-template-columns: 1fr 1fr;
     gap: 32px;
+  }
+  .map-container{
+    display: none;
   }
 }
 @media (max-width: 768px) {
