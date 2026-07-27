@@ -1,20 +1,4 @@
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-html {
-  scroll-behavior: smooth;
-  font-size: 16px;
-}
-body {
-  font-family: "Open Sans", sans-serif;
-  color: #333;
-  background: #fff;
-  overflow-x: hidden;
-}
+@import url("./same.css");
 img {
   display: block;
   width: 100%;
@@ -475,7 +459,7 @@ button {
 .svc-link:hover {
   color: var(--yellow);
 }
-.btn{
+.btn {
   display: flex;
   justify-content: end;
   align-items: end;
