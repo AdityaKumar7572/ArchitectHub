@@ -1,4 +1,35 @@
 @import url("./same.css");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 16px;
+}
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #333;
+  background: #fff;
+  line-height: 1.6;
+}
+:root {
+  --yellow: #f5c800;
+  --yellow2: #e0b400;
+  --black: #111;
+  --dark: #1c1c1c;
+  --dark2: #252525;
+  --white: #fff;
+  --offwhite: #f7f7f7;
+  --gray: #777;
+  --lgray: #ddd;
+  --ff-h: "Oswald", sans-serif;
+  --max: 1200px;
+  --tr: 0.28s ease;
+}
 img {
   display: block;
   width: 100%;
