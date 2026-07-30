@@ -5,9 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Our Projects - Architect Hub</title>
     <link rel="icon" type="image/png" href="./assetes/logo2.png" />
+    <link href="./index.css" rel="Stylesheet" />
     <link href="projects.css" rel="Stylesheet" />
   </head>
   <body>
+    <!-- NAV -->
+    <nav id="nav">
+      <div class="nav-w">
+        <div class="logo" id="logo">
+          <span class="logo-dot"> <img src="./assetes/logo2.png" /></span
+          >ARCHITECT<em>HUB</em>
+        </div>
+        <div class="nav-links">
+          <a href="./index.html">Home</a>
+          <a href="./services.html">Services</a>
+          <a href="./projects.html">Projects</a>
+          <a href="./why-choose-us.html">Why Choose Us</a>
+          <!-- <a href="#blog">News</a> -->
+          <!-- <a href="#contact">Contact</a> -->
+        </div>
+        <a href="#contact" class="nav-cta">Contact Us&nbsp;<i class="fa-solid fa-arrow-right"></i></a>
+        <button class="hbg" id="hbg" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+    <div class="mob-menu" id="mobMenu">
+      <a href="./index.html">Home</a>
+      <a href="./services.html">Services</a>
+      <a href="./projects.html">Projects</a>
+      <a href="./why-choose-us.html">Why Us</a>
+      <!-- <a href="#blog">News</a>
+      <a href="#contact">Contact</a> -->
+    </div>
     <!-- Hero Section -->
     <section class="hero">
       <div class="hero-content">
@@ -310,7 +340,7 @@
       <p>Design with purpose. Build with passion.</p>
     </footer>
 
-    <script>
+    <script src="index.js">
       function filterProjects(category) {
         const cards = document.querySelectorAll(".project-card");
         const buttons = document.querySelectorAll(".filter-btn");
