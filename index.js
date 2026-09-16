@@ -136,3 +136,78 @@ document.getElementById("cForm").addEventListener("submit", function (e) {
     b.style.color = "";
   }, 3500);
 });
+/* =====================================================
+   ENQUIRY FORM
+===================================================== */
+
+const enquiryForm = document.getElementById("cForm");
+
+if (cForm) {
+  enquiryForm.addEventListener("submit", function (e) {
+    e.preventDefault();
+
+    const submitBtn = document.getElementById("enquirySubmit");
+
+    /* Get form values */
+
+    const name = document.getElementById("name").value.trim();
+    const phone = document.getElementById("phone").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const projectType = document.getElementById("projectType").value;
+    const messageText = document.getElementById("message").value.trim();
+
+    /* Validation */
+
+    if (!name || !phone || !email || !projectType || !messageText) {
+      message.textContent = "Please fill all required fields.";
+
+      message.className = "enquiry-message error";
+
+      return;
+    }
+
+    /* Phone validation */
+
+    if (!/^[0-9]{10}$/.test(phone)) {
+      message.textContent = "Please enter a valid 10-digit mobile number.";
+
+      message.className = "enquiry-message error";
+
+      return;
+    }
+
+    /* Button loading */
+
+    submitBtn.disabled = true;
+
+    submitBtn.innerHTML =
+      'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
+
+    /*
+      Temporary frontend success.
+
+      Later this section will send the
+      enquiry to Node.js + MongoDB.
+    */
+
+    setTimeout(() => {
+      submitBtn.disabled = false;
+
+      submitBtn.innerHTML = 'Enquiry Sent <i class="fa-solid fa-check"></i>';
+
+      message.textContent =
+        "Thank you! Your enquiry has been submitted successfully. Our team will contact you shortly.";
+
+      message.className = "enquiry-message success";
+
+      enquiryForm.reset();
+
+      setTimeout(() => {
+        submitBtn.innerHTML =
+          'Send Enquiry <i class="fa-solid fa-arrow-right"></i>';
+
+        message.style.display = "none";
+      }, 4000);
+    }, 1200);
+  });
+}

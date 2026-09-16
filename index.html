@@ -25,8 +25,10 @@
     <nav id="nav">
       <div class="nav-w">
         <div class="logo" id="logo">
-          <span class="logo-dot"> <img src="./assetes/logo2.png" /></span
-          >ARCHITECT<em>HUB</em>
+          <span class="logo-dot">
+            <img src="./assetes/logo2.png" />
+          </span>
+          ARCHITECT<em>HUB</em>
         </div>
         <div class="nav-links">
           <a href="#home">Home</a>
@@ -35,12 +37,15 @@
           <a href="./why-choose-us.html">Why Choose Us</a>
           <!-- <a href="#blog">News</a> -->
           <!-- <a href="#contact">Contact</a> -->
+          
         </div>
-        <a href="#contact" class="nav-cta"
-          >Contact Us&nbsp;<i class="fa-solid fa-arrow-right"></i
-        ></a>
+        <a href="#contact" class="nav-cta">
+          Contact Us&nbsp;<i class="fa-solid fa-arrow-right"></i>
+        </a>
         <button class="hbg" id="hbg" aria-label="Menu">
-          <span></span><span></span><span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </button>
       </div>
     </nav>
@@ -51,6 +56,7 @@
       <a href="./why-choose-us.html">Why Us</a>
       <!-- <a href="#blog">News</a>
       <a href="#contact">Contact</a> -->
+
     </div>
 
     <!-- HERO -->
@@ -640,17 +646,33 @@
               </div>
             </div>
           </div>
-          <form class="cf rv rv-d2" id="cForm">
+          <form
+            class="cf rv rv-d2"
+            id="contactForm"
+            method="POST"
+            action="/api/contact"
+          >
             <div class="cf-row">
-              <input type="text" placeholder="Full Name" required />
-              <input type="email" placeholder="Email Address" required />
+              <input type="text" placeholder="Full Name" required id="name" />
+              <input
+                type="email"
+                placeholder="Email Address"
+                required
+                id="email"
+              />
             </div>
             <div class="cf-row">
-              <input type="tel" placeholder="Phone Number" />
-              <input type="text" placeholder="Project Type" />
+              <input type="tel" placeholder="Phone Number" id="phone" />
+              <input type="text" placeholder="Project Type" id="projectType" />
             </div>
-            <textarea placeholder="Describe your project…" required></textarea>
-            <button type="submit" class="btn-y">Send Message &rarr;</button>
+            <textarea
+              placeholder="Describe your project…"
+              required
+              id="message"
+            ></textarea>
+            <button type="submit" class="btn-y" id="enquirySubmit">
+              Send Message &rarr;
+            </button>
           </form>
         </div>
       </div>
@@ -664,8 +686,9 @@
             <div>
               <div class="ft-logo">
                 <span class="ft-logo-dot">
-                  <img src="./assetes/logo2.png" /> </span
-                >ARCHITECT<em>HUB</em>
+                  <img src="./assetes/logo2.png" />
+                </span>
+                ARCHITECT<em>HUB</em>
               </div>
               <p class="ft-about">
                 A full-service construction and architectural firm dedicated to
@@ -708,10 +731,18 @@
             <div class="ft-col">
               <h4>Quick Links</h4>
               <ul>
-                <li><a href="#services">Services</a></li>
-                <li><a href="#portfolio">Projects</a></li>
-                <li><a href="#why">Why Us</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li>
+                  <a href="#services">Services</a>
+                </li>
+                <li>
+                  <a href="#portfolio">Projects</a>
+                </li>
+                <li>
+                  <a href="#why">Why Us</a>
+                </li>
+                <li>
+                  <a href="#contact">Contact</a>
+                </li>
               </ul>
             </div>
             <div class="ft-col">
@@ -721,25 +752,25 @@
                   <a href="#">
                     <i class="fa-solid fa-location-dot"></i>
                     Bhatwaliya no. 1,Ward no. 13 Sashtri nagar Nagar panchayat
-                    Tamkuhiraj pincode- 274407</a
-                  >
+                    Tamkuhiraj pincode- 274407
+                  </a>
                 </li>
                 <li>
                   <a href="tel:+918604155065">
-                    <i class="fa-solid fa-phone"></i>+91 8604155065</a
-                  >
+                    <i class="fa-solid fa-phone"></i>+91 8604155065
+                  </a>
                 </li>
                 <li>
                   <a href="mailto:archtechhub@gmail.com">
                     <i class="fa-solid fa-envelope"></i>
-                    archtechhub@gmail.com</a
-                  >
+                    archtechhub@gmail.com
+                  </a>
                 </li>
                 <li>
                   <a href="#">
                     <i class="fa-solid fa-clock"></i>
-                    Mon–Fri 8:00 AM – 6:00 PM</a
-                  >
+                    Mon–Fri 8:00 AM – 6:00 PM
+                  </a>
                 </li>
               </ul>
             </div>
@@ -772,7 +803,7 @@
         </div>
       </div>
     </footer>
-
+    <script src="./Backend/script.js"></script>
     <script src="index.js"></script>
   </body>
 </html>
